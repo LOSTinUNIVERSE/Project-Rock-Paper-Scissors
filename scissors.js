@@ -8,8 +8,6 @@ let player = 0
 // this function takes 2 parameters and compares them as a result logging the winner 
 // choice 1 is player nad choice 2 is computer
 
-
-
 function playRound (choice1, choice2)
 {  
     // condition 1 
@@ -48,8 +46,6 @@ else {
     computer++}
     }
 }   
-// let choice1= "rock"
-  
 let playerChoice = function () {
  return prompt (" what is your weapon").toLowerCase() } ;
 
@@ -59,9 +55,6 @@ playRound (playerChoice(),computerChoice())  }
 for (let i = 0; i < 3; i++) {  
  game () 
 }
-// console.log(playerChoice);
-
-
 function winner(machine, person) {
     if (machine == person){
         console.log("both of you have equal amount of scores", "player = ",player,"and", "computer = ", computer);
@@ -76,31 +69,3 @@ function winner(machine, person) {
 }
 
 winner(computer, player)
-
-    
-
-
-// const playerSelection = prompt ("Hi ! Choose your weapon ?").toLowerCase();    
-// const computerSelection = getComputerChoice ();
-// console.log(computerSelection);
-// const winner = console.log();
-// function playRound(playerSelection,computerSelection){
-//    if (playerSelection === computerSelection)  {
-//     console.log("no winner today")}
-//     else if (playerSelection === "rock" && computerSelection === "scissors", "paper") 
-//     { console.log("winner")}
-//     else if (playerSelection === ("scissors"|| "paper") && computerSelection === "rock" ) 
-//     { console.log("ups ...")}
-//     else if (playerSelection === "paper" && computerSelection === ("rock"|| "scissors")) 
-//     { console.log("lost")}
-//     else if (playerSelection === ("scissors" || "rock") && computerSelection === "paper") 
-//     { console.log("good boy")}
-//     else if (playerSelection == (0 || null)){
-//         console.log("not good boy")}  
-//     else {console.log("nothing")}
-//     return playerSelection
-// }
-
-
-// console.log(playRound(playerSelection, computerSelection));
-
